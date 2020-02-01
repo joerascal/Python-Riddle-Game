@@ -1,28 +1,26 @@
-age = int(input("How old are you? "))
+q1_answers = ["London" , " London"]
+
+player_name = input("What is your name? ")
+
+player_dob = int(input("Welcome to Riddle City " + player_name + "\nWhich year were you born in? "))
+
+age = 2020 - player_dob
+
+print("You are " ,age, " years of age" )
+
+print("Answer each question correctly, you have 3 attempts.")
 
 if age >= 18:
 
 	lives = 3
+	
 	while lives >= 1:
 
-		answer = input("What is the largest city in the United Kindgom? ")
+		x = input("What is the largest city in the United Kindgom? ")
 
-		if answer == "London":
-			
-			print("Correct answer")
-			break
+		answer = x.capitalize()
 
-		elif answer == " London":
-
-			print("Correct answer")
-			break
-
-		elif answer == "london":
-
-			print("Correct answer")
-			break
-
-		elif answer == " london":
+		if answer in q1_answers:
 			
 			print("Correct answer")
 			break
